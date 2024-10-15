@@ -1,12 +1,6 @@
-.hello {
-    color: green;
-    font-size: 45px;
-}
-
 body {
     margin: 0;
 }
-
 
 .header {
     display: flex;
@@ -15,24 +9,21 @@ body {
     background-color: rgba(22, 22, 23, .8);
 }
 
-.item {
-    margin-left: 10px;
+.header__items {
     font-size: 14px;
     font-weight: 400;
     color: white;
 }
 
-.watch {
-    text-align: center;
-    width: 100%;
-    padding-top: 5px;
-    height: 340px;
-    background-size: 100% 340px;
-    background-repeat: no-repeat;
-    background-image: url('./images/hero_apple_watch_series_10_avail_lte__esu66gaw6dci_largetall.jpg');
+.header__item {
+    margin-right: 24px;
 }
 
-.watch-logo {
+.header__item:last-child {
+    margin-right: 0px;
+}
+
+.apple-watch__logo {
     margin: 0 auto;
     margin-bottom: 10px;
     width: 180px;
@@ -42,61 +33,66 @@ body {
     background-image: url('./images/hero_logo_apple_watch_series_10__dla4dkv1wfue_largetall.png')
 }
 
-.buttons {
-    margin-top: 10px;
+.apple-watch {
+    text-align: center;
+    width: 100%;
+    padding-top: 5px;
+    height: 340px;
+    background-size: 100% 340px;
+    background-repeat: no-repeat;
+    background-image: url('./images/hero_apple_watch_series_10_avail_lte__esu66gaw6dci_largetall.jpg');
 }
 
-.learn {
-    background: #0071e3;
-    color: white;
-    border: 0px;
+.buttons-info {
+    margin-top: 12px;
+}
+
+.buttons-info__btn{
     border-radius: 50px;
-    width: 90px;
-    height: 28px;
+    height: 35px;
+}
+    
+.buttons-info__btn_solid {
+    background: #0071e3;
+    color: #95f2ff;
+    width: 105px;
+    border: 0px;
 }
 
-.buy {
+.buttons-info__btn_trans {
     background: rgba(0, 0, 0, 0);
     color: #06c;
+    width: 60px;
     border: 1px solid #06c;
-    border-radius: 50px;
-    width: 90px;
-    height: 28px;
 }
 
-.people {
+.airpods__cards {
     display: flex;
     margin-bottom: 20px;
     gap: 7px;
 }
 
-.human-one {
+.airpods__card{
     width: 100%;
     height: 300px;
     background-size: 100% 300px;
     background-repeat: no-repeat;
-    background-image: url('./images/human1.jpg');
     color: white;
     display: flex;
     text-align: center;
     flex-direction: column;
     justify-content: flex-end;
+}
+
+.human-one {
+    background-image: url('./images/human1.jpg');
 }
 
 .human-two {
-    width: 100%;
-    height: 300px;
-    background-size: 100% 300px;
-    background-repeat: no-repeat;
     background-image: url('./images/human2.jpg');
-    color: white;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    justify-content: flex-end;
 }
 
-.text {
+.airpods__card-info {
     margin: 10px auto;
     width: 30%;
 }
